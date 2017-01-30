@@ -13,32 +13,57 @@
     <title>Test 2</title>
 
     <style>
-      .mp_header_action {
-        height: 65px;
-        width: 250px;
-        border: 1px solid black;
+      div {
+        /*border: 1px solid black;*/
       }
-      .glyphicon {
-        float: left;
-        font-size: 60px;
-        margin-right: 10px;
+      .cont_box{
+        display: table;
       }
-      span {
-        float: left;
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: bold;
+      .cont_row{
+        display: table-row;
+      }
+      .glyphicon-cell {
+        width: 40px;
+        height: 40px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        background-color: #fed136;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .text-cell {
+        overflow: hidden;
+        padding-left: 10px;
+      }
+      .glyphicon-cell span {
+        font-size: 30px;
+        color: #232323;
+      }
+      .text-cell p {
+        font-size: 15px;
+        margin: 0;
       }
     </style>
 
 </head>
 
 <body>
-
-<div class="mp_header_action">
-  <span class="glyphicon glyphicon-earphone"></span>
-  <span>Позвоните нам</span>
-  <span>99-999-999</span>
+<div class="cont_box">
+  <div class="cont_row">
+    <div class="glyphicon-cell">
+      <span class="glyphicon glyphicon-earphone"></span>
+    </div>
+    <div class="text-cell">
+      <p>
+        First line
+      </p>
+      <p>
+        Second line
+      </p>
+    </div>
+  </div>
 </div>
 </body>
 

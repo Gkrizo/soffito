@@ -5,56 +5,139 @@
   padding: 0;
 }
 .mp_header div{
-  padding: 0;
-  margin: auto;
+  /*border: 1px solid red;*/
 }
 .mp_header .action {
-  height: 65px;
-  width: 230px;
-  margin-top: 30px;
+  margin: auto;
+  margin-top: 45px;
+  padding: 0;
 }
-.mp_header .logo{
-  height: 65px;
-  width: 250px;
-  margin-top: 25px;
+.cont_box{
+  display: table;
+}
+.cont_row{
+  display: table-row;
+}
+.cont_cell{
+  display: table-cell;
+}
+.glyphicon-cell {
+  width: 40px;
+  height: 40px;
+  display: table-cell;
   text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  background-color: #fed136;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.mp_header .action .glyphicon {
+.text-cell {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.glyphicon-cell span {
+  font-size: 30px;
+  color: #232323;
+}
+.text-cell p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: #d6d6d6;
+}
+.actionz:hover{
+  text-decoration: none;
+}
+.actionz:-webkit-any-link{
+  text-decoration: none;
+}
+.actionz:hover p{
+  color: white;
+}
+.actionz:hover .glyphicon-cell{
+  background-color: #232323;
+  border: 1px solid #fed136;
+}
+.actionz:hover .glyphicon-cell .glyphicon{
   color: #fed136;
-  float: left;
+}
+.mp_header .action_logo {
+  margin: auto;
+  margin-top: 40px;
+  padding: 0;
+}
+#logo .glyphicon-cell {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #232323;
+  padding-right: 2px;
+  margin: 0;
+}
+#logo span {
   font-size: 40px;
-  margin-right: 15px;
-  margin-top: 10px;
-}
-.mp_header .action p {
-  color: #d6d6d6;
-  float: left;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-.mp_header .logo .glyphicon {
   color: #fed136;
-  float: left;
-  font-size: 60px;
-  margin-right: 15px;
 }
-.mp_header .logo h3 {
-  color: #d6d6d6;
-  float: left;
-  font-size: 28px;
-  line-height: 20px;
+#logo h2 {
+  font-size: 30px;
+  line-height: 31px;
+  margin: 0;
   font-weight: bold;
-  margin-top: 10px;
+  color: #fff;
 }
-.mp_header .logo p {
-  color: #d6d6d6;
-  float: left;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: bold;
+#logo p {
+  font-size: 10px;
+  line-height: 15px;
+  margin-left: 0;
 }
+.actionz:hover #logo .glyphicon-cell {
+  background-color: #fed136;
+}
+.actionz:hover #logo span {
+  color: #232323;
+}
+
+@media screen and (min-width: 1200px) {
+  .mp_header .action {
+    margin-top: 40px;
+  }
+  .glyphicon-cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .text-cell p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .glyphicon-cell span {
+    font-size: 30px;
+  }
+  .mp_header .action_logo {
+    margin-top: 35px;
+  }
+  #logo .glyphicon-cell {
+    width: 60px;
+    height: 60px;
+  }
+  #logo span {
+    font-size: 45px;
+  }
+  #logo h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  #logo p {
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 5px;
+  }
+}
+
 /* /. Logo header styles *?
 
 /*main page nav styles */
@@ -71,5 +154,6 @@
   background-color: #333333;
   border-top: 1px solid #a7a7a7;
   border-bottom: 1px solid #7a7a7a;
+  margin-bottom: 0;
 }
 /* /.main page nav styles */

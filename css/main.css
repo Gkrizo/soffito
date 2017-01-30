@@ -8,28 +8,123 @@
     margin-bottom: 30px;
 }
 
-/* rounds (rounds.html) */
-.img-center {
-	margin: 0 auto;
+/* carousel */
+.carousel-inner h2, .carousel-inner p {
+  text-shadow: 0 0 10px #000;
+}
+/* /.carousel */
+
+/* Feature boxes */
+.thumbnail {
+  border: none;
+  padding-top: 20px;
+}
+.thumbnail .glyphicon-wrapper {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #232323;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+.thumbnail .glyphicon {
+	font-size: 50px;
+  color: #232323;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+a:hover .thumbnail  {
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 10px;
+}
+a:hover .thumbnail h3 {
+  color: #fff;
+}
+a:hover .thumbnail p {
+  color: #d6d6d6;
+}
+a:hover .thumbnail .glyphicon {
+  color: #fed136;
+}
+a:hover .thumbnail .glyphicon-wrapper {
+  border: 1px solid #fed136;
 }
 
 /* 2nd image */
 .business-header {
     height: 400px;
-    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    background: url('../pics/starry-sky.gif') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+a:hover .business-header h1 {
+  color: #fed136;
+  font-weight: bold;
+}
+a:hover .business-header h1 small{
+  color: #fff;
+}
 
 /* Customize the text color and shadow color and to optimize text legibility. */
 
 .tagline {
+    font-size: 28px;
     text-shadow: 0 0 10px #000;
     color: #fff;
+    text-align: center;
 }
 
 .img-center {
     margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .tagline {
+      font-size: 38px;
+      text-shadow: 0 0 10px #000;
+      color: #fff;
+      text-align: center;
+  }
+}
+
+/* Locationz */
+.locationz {
+  margin: 0;
+}
+.locationz img {
+   margin: auto auto 10px auto;
+}
+.locationz p {
+    margin-bottom: 20px;
+    color: #232323;
+}
+/* /. Locationz */
+
+/* footer */
+footer{
+  text-align: center;
+  background-color: #232323;
+  color: white;
+  padding-bottom: 5px;
+}
+footer a {
+  color: white;
+}
+footer .social {
+  vertical-align: middle;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+footer .contacts {
+  padding-bottom: 20px;
+}
+footer a:active, footer a:visited{
+  color: white;
+}
+footer .hvr:hover {
+  color: #fed136;
+}
+/* /.footer */
