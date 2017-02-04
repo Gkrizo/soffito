@@ -13,57 +13,38 @@
     <title>Test 2</title>
 
     <style>
-      div {
+      .test:before {
+        margin-top: 50px;
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: blue;
+      }
+      .test {
+        margin-top: 200px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
         /*border: 1px solid black;*/
       }
-      .cont_box{
-        display: table;
+      /*.test:after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border: 1px solid red;*/
       }
-      .cont_row{
-        display: table-row;
-      }
-      .glyphicon-cell {
-        width: 40px;
-        height: 40px;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        padding: 0;
-        background-color: #fed136;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .text-cell {
-        overflow: hidden;
-        padding-left: 10px;
-      }
-      .glyphicon-cell span {
-        font-size: 30px;
-        color: #232323;
-      }
-      .text-cell p {
-        font-size: 15px;
-        margin: 0;
-      }
+
     </style>
 
 </head>
 
 <body>
-<div class="cont_box">
-  <div class="cont_row">
-    <div class="glyphicon-cell">
-      <span class="glyphicon glyphicon-earphone"></span>
-    </div>
-    <div class="text-cell">
-      <p>
-        First line
-      </p>
-      <p>
-        Second line
-      </p>
-    </div>
-  </div>
+<div class="test">
 </div>
 </body>
 

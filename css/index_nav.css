@@ -4,9 +4,6 @@
   background-color: #232323;
   padding: 0;
 }
-.mp_header div{
-  /*border: 1px solid red;*/
-}
 .mp_header .action {
   margin: auto;
   margin-top: 45px;
@@ -145,7 +142,10 @@
   display: inline-block;
   float: none;
 }
-
+ul.dropdown-menu .dropdown-header a{
+  padding: 3px 0;
+  color: #222;
+}
 .navbar .navbar-collapse {
     text-align: center;
 }
