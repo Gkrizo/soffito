@@ -1,0 +1,160 @@
+.index_header {
+  height: 125px;
+  background-color: #232323;
+  padding: 0;
+}
+
+/* --- logo --- */
+.logo_cont {
+  display: table;
+  margin: auto;
+  margin-top: 22px;
+}
+.logo_cont_row {
+  display: table-row;
+}
+.logo_cell {
+  float: left;
+  height: 60px;
+  width: 60px;
+  background-image: url("../pics/logo.gif");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+.name_cell {
+  float: left;
+  height: 60px;
+}
+@font-face {
+  font-family: "tt_inters";
+  src: url(../fonts/inters.otf) format("truetype");
+}
+.name_cell h2 {
+  font-family: tt_inters;
+  color: #d6d6d6;
+  font-size: 58px;
+  line-height: 62px;
+  margin: 1px 0 0 5px;
+}
+.slogan_cell{
+  margin: 5px 0 0 0;
+}
+.slogan_cell p{
+  float: left;
+  color: #d6d6d6;
+  font-weight: bold;
+  font-size: 12.3px
+}
+
+/* --- action divs --- */
+.index_header .action {
+  margin: auto;
+  margin-top: 45px;
+  padding: 0;
+}
+.action_cont{
+  margin: auto;
+  display: table;
+  overflow: hidden;
+}
+.action_cont_row{
+  display: table-row;
+  overflow: hidden;
+}
+.action_cont_cell_glyph{
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  background-color: #fed136;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.action_cont_cell_glyph span{
+  color: #232323;
+  font-size: 30px;
+}
+.action_cont_cell_text{
+  display: table-cell;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.action_cont_cell_text p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: #d6d6d6;
+  margin: 0;
+  padding: 0;
+}
+/* --- action divs hover --- */
+.action_cont:hover p {
+  color: white;
+}
+.action_cont:hover .action_cont_cell_glyph {
+  background-color: #232323;
+  border: 1px solid #fed136;
+}
+.action_cont:hover .action_cont_cell_glyph span {
+  color: #fed136;
+}
+
+/* --- main page nav styles --- */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+ul.dropdown-menu .dropdown-header a{
+  padding: 3px 0;
+  color: #222;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar {
+  background-color: #333333;
+  border-top: 1px solid #a7a7a7;
+  border-bottom: 1px solid #7a7a7a;
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 1200px) {
+  /* --- logo media--- */
+  .logo_cont {
+    margin-top: 12px;
+  }
+  .logo_cell {
+    height: 75px;
+    width: 75px;
+    background-size: 75px 75px;
+  }
+  .name_cell {
+    height: 75px;
+  }
+  .name_cell h2 {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 3px 0 0 5px;
+  }
+  .slogan_cell p{
+    font-size: 15px
+  }
+  /* --- action divs media --- */
+  .action_cont_cell_glyph{
+    width: 50px;
+    height: 50px;
+  }
+  .action_cont_cell_glyph span{
+    color: #232323;
+    font-size: 35px;
+  }
+  .action_cont_cell_text p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

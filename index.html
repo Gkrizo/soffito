@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Compname - главная</title>
+    <title>Main page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,8 +17,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/modern-business.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index_nav.css">
-    <link rel="stylesheet" href="css/mp_header.css">
+    <link rel="stylesheet" href="css/index_header_nav.css">
     <!-- <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css"> -->
 
     <!-- Custom Fonts -->
@@ -31,47 +30,52 @@
 
 <body>
   <!-- Main page header -->
-  <div class="container-fluid mp_header hidden-xs">
+  <div class="container-fluid hidden-xs index_header">
     <div class="col-sm-4 col-md-3">
-      <div class="cont_box action">
-        <a class="actionz" href="tel:99999999">
-          <div class="cont_row">
-            <div class="glyphicon-cell">
-              <span class="glyphicon glyphicon-earphone"></span>
-            </div>
-            <div class="text-cell">
-              <p>Позвоните нам</p>
-              <p>99-999-999</p>
+      <div class="action">
+        <a href="tel:0035725580418">
+          <div class="action_cont">
+            <div class="action_cont_row">
+              <div class="action_cont_cell_glyph">
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+              <div class="action_cont_cell_text">
+                <p>Позвоните нам</p>
+                <p>+357 25 580 418</p>
+              </div>
             </div>
           </div>
         </a>
       </div>
     </div>
     <div class="col-sm-4  col-md-6">
-      <div class="cont_box action_logo">
-        <a class="actionz" href="#">
-          <div class="cont_row"  id='logo'>
-            <div class="glyphicon-cell">
-              <span class="glyphicon glyphicon-home"></span>
+        <div class="logo_cont">
+          <div class="logo_cont_row">
+            <div class="logo_cell">
             </div>
-            <div class="text-cell">
-              <h2>VIPCEILING</h2>
+            <div class="name_cell">
+              <h2>Soffito</h2>
+            </div>
+          </div>
+          <div class="logo_cont_row">
+            <div class="slogan_cell">
               <p>НАТЯЖНЫЕ ПОТОЛКИ НА КИПРЕ</p>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
     </div>
     <div class="col-sm-4  col-md-3">
-      <div class="cont_box action">
-        <a class="actionz" href="tel:99999999">
-          <div class="cont_row">
-            <div class="glyphicon-cell">
+      <div class="action">
+        <a href="#">
+          <div class="action_cont">
+            <div class="action_cont_row">
+              <div class="action_cont_cell_glyph">
               <span class="glyphicon glyphicon-pencil"></span>
-            </div>
-            <div class="text-cell">
-              <p>Бесплатно</p>
-              <p>вызвать замерщика</p>
+              </div>
+              <div class="action_cont_cell_text">
+                <p>Бесплатно</p>
+                <p>вызвать замерщика</p>
+              </div>
             </div>
           </div>
         </a>
@@ -96,7 +100,7 @@
           <div class="collapse navbar-collapse" id="dropdown-index">
               <ul class="nav navbar-nav">
                   <li>
-                      <a href="#">О нас</a>
+                      <a href="company.html">О нас</a>
                   </li>
                   <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Натяжные потолки<b class="caret"></b></a>
@@ -130,7 +134,7 @@
                               <a href="about.html#3d">3d-дизайн</a>
                           </li>
                           <li>
-                              <a href="about.html#led">Световые панели</a>
+                              <a href="about.html#led">Световые решения</a>
                           </li>
                           <li>
                               <a href="about.html#perforated">Перфорация</a>
@@ -140,10 +144,16 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Свет<b class="caret"></b></a>
                       <ul class="dropdown-menu">
                           <li>
-                              <a href="#">Встраиваемые</a>
+                              <a href="light.html#spotlight">Точечный</a>
                           </li>
                           <li>
-                              <a href="#">Светодиодная подсветка</a>
+                              <a href="light.html#lightpanel">Панели</a>
+                          </li>
+                          <li>
+                              <a href="light.html#crystal">Споты</a>
+                          </li>
+                          <li>
+                              <a href="light.html#carnice">Закарнизный</a>
                           </li>
                       </ul>
                   </li>
@@ -151,38 +161,18 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги<b class="caret"></b></a>
                       <ul class="dropdown-menu">
                           <li>
-                              <a href="#">Установка</a>
+                              <a href="installation.html">Установка</a>
                           </li>
                           <li>
-                              <a href="#">Звукоизоляция</a>
+                              <a href="otherservices.html#services_repair">Ремонт</a>
                           </li>
                           <li>
-                              <a href="#">Ремонт</a>
-                          </li>
-                          <li>
-                              <a href="#">Дизайн</a>
-                          </li>
-                          <li>
-                              <a href="#">Слив воды</a>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Оплата<b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="#">Расчет стоимости</a>
-                          </li>
-                          <li>
-                              <a href="#">Прайс-лист</a>
-                          </li>
-                          <li>
-                              <a href="#">Предоплата</a>
+                              <a href="otherservices.html#services_drain">Слив воды</a>
                           </li>
                       </ul>
                   </li>
                   <li>
-                      <a href="#">Галлерея</a>
+                      <a href="#">Галерея</a>
                   </li>
               </ul>
           </div>
@@ -199,29 +189,53 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('pics/img1.gif');"></div>
+                <div class="fill" style="background-image:url('pics/4.gif');"></div>
                 <div class="carousel-caption">
-                    <h2>Slide one</h2>
-                    <p>Some text line</p>
+                  <h2>Сочетание</h2>
+                  <p>матовых и глянцевых текстур выглядит эффектно даже в одном цвете</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('pics/img0.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Зонирование</h2>
+                    <p>с помощью многоуровневого потолка, цветовых и световых решений</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('pics/bnw.jpg');"></div>
+                <div class="carousel-caption">
+                  <h2>Многоуровневость</h2>
+                  <p>позволяет строить сложные трехмерные дизайнерские композиции</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('pics/red.gif');"></div>
+                <div class="carousel-caption">
+                  <h2>Яркие цвета</h2>
+                  <p>подчеркивают индивидуальность помещения и его владельца</p>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('pics/img2.gif');"></div>
                 <div class="carousel-caption">
-                  <h2>Slide two</h2>
-                  <p>Some text line</p>
+                  <h2>Художественная печать</h2>
+                  <p>любых изображений на полотно потолка</p>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('pics/img3.gif');"></div>
+                <div class="fill" style="background-image:url('pics/marble.gif');"></div>
                 <div class="carousel-caption">
-                  <h2>Slide three</h2>
-                  <p>Some text line</p>
+                  <h2>Сложные текстуры</h2>
+                  <p>позволяют имитировать камень, бархат и множество других материалов, сохраняя все преимущества натяжного потолка</p>
                 </div>
             </div>
         </div>
@@ -321,7 +335,7 @@
     <!-- Container 2 -->
     <div class="container">
 
-      <!-- Portfolio Section -->
+      <!-- Locationz Section -->
       <div class="row locationz">
             <div class="col-lg-12">
                 <h2 class="page-header">Выберите потолок для:</h2>
@@ -364,26 +378,9 @@
             </div>
         </div>
       <!-- /.row -->
-
-      <hr>
-
-      <!-- Call to Action Section -->
-      <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
-            </div>
-        </div>
-
-      <hr>
-
+        <hr>
     </div>
     <!-- /.container -->
-
 
           <!-- Footer -->
 <footer>
@@ -400,11 +397,11 @@
       </a>
     </div>
     <div class="col-xs-12 contacts">
-      <email class="hvr">email@email.com</email><br />
-      <a class="hvr" href="tel:99999999">99-999-999</a>
+      <email class="hvr">info@soffito.com</email><br />
+      <a class="hvr" href="tel:0035725580418">+357 25 580 418</a>
     </div>
     <div>
-      <p id="copyright">Copyright &copy; Your Website 2016</p>
+      <p id="copyright">Copyright &copy; soffito.com 2016</p>
     </div>
   </div>
 </footer>

@@ -1,0 +1,13 @@
+#services_installation p {
+  text-align: justify;
+}
+.service_pic {
+  padding: 10px;
+}
+.service_pic img {
+  display: block;
+  margin: 0 auto;
+}
+.service-s {
+  width: 230px;
+}
