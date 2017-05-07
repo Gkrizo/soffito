@@ -40,10 +40,17 @@
   margin: 5px 0 0 0;
 }
 .slogan_cell p{
-  float: left;
+  text-align: left;
+  margin: 0;
   color: #d6d6d6;
   font-weight: bold;
   font-size: 12.3px
+}
+.logo_cont_row{
+  text-align: center;
+}
+#slogan_cell_en p{
+  letter-spacing: 1.2px;
 }
 
 /* --- action divs --- */

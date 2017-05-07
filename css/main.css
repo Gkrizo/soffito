@@ -1,9 +1,18 @@
 /*Hero block (4 reqt after main img)*/
-body {
+html {
+  position: relative;
   min-height: 100%;
 }
-section {
-  margin-bottom: 50px;
+body {
+  margin-bottom: 180px;
+}
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffc600;
 }
 .hero-spacer {
     margin-top: 50px;
@@ -13,9 +22,61 @@ section {
     margin-bottom: 30px;
 }
 
+/* inner page and xs index logo and name */
+.navbar-brand {
+  color: #fed136;
+  padding: 6px 0 0 0;
+}
+.int_page_logo {
+  position: relative;
+  float: left;
+  height: 40px;
+  width: 40px;
+  background-image: url("../pics/logo.gif");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "tt_inters";
+  src: url(../fonts/inters.otf) format("truetype");
+}
+.navbar-brand p {
+  display: inline-block;
+  float: left;
+  padding: 0 0 0 10px;
+  font-family: tt_inters;
+  color: #d6d6d6;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 1px 0 0 0;
+}
+@media screen and (max-width: 768px){
+  .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar-brand p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+#language_icon {
+  padding: 0;
+}
+#language_icon img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 /* carousel */
 .carousel-inner h2, .carousel-inner p {
   text-shadow: 0 0 10px #000;
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+header.carousel {
+  background-color: #f1f1f1;
 }
 /* /.carousel */
 
@@ -32,8 +93,8 @@ section {
   padding: 25px;
   border-radius: 10px;
 }
-.thumbnail .glyphicon {
-	font-size: 50px;
+.thumbnail .glyphicon, .thumbnail .fa {
+  font-size: 50px;
   color: #232323;
 }
 a:-webkit-any-link {
@@ -50,7 +111,7 @@ a:hover .thumbnail h3 {
 a:hover .thumbnail p {
   color: #d6d6d6;
 }
-a:hover .thumbnail .glyphicon {
+a:hover .thumbnail .glyphicon, a:hover .thumbnail .fa {
   color: #fed136;
 }
 a:hover .thumbnail .glyphicon-wrapper {
@@ -60,7 +121,7 @@ a:hover .thumbnail .glyphicon-wrapper {
 /* 2nd image */
 .business-header {
     height: 400px;
-    background: url('../pics/sky.png') center center no-repeat scroll;
+    background: url('../pics/index/banner_sky.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -117,12 +178,13 @@ a:hover .business-header h1 small{
 
 /* footer */
 footer{
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  /*height: 200px;*/
   text-align: center;
   background-color: #232323;
   color: white;
-  padding-bottom: 5px;
-  margin-top: 50px;
 }
 footer a {
   color: white;

@@ -1,0 +1,47 @@
+#promo {
+  margin: 100px 0 0 0;
+}
+.pic {
+  border: 1px solid red;
+  margin: auto;
+}
+.text {
+  padding: 100px 0 0 0;
+  border: 1px solid blue;
+  text-align: center;
+}
+.pic img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+@font-face {
+  font-family: "tt_inters";
+  src: url(../fonts/inters.otf) format("truetype");
+}
+.text p {
+  color: #6d6d6d;
+  font-family: "tt_inters", arial, sans-serif;
+  font-size: 4em;
+}
+.text .promocode {
+  font-size: 3em;
+  color: black;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+.text .fivepercent {
+  color: #fed136;
+  font-family: "tt_inters", arial, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .text p {
+    font-size: 2em;
+  }
+  .text .promocode {
+    font-size: 1.5em;
+  }
+  .text .fivepercent {
+    font-size: 1.5em;
+  }
+}

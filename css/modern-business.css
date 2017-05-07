@@ -5,12 +5,6 @@
  */
 
 /* Global Styles */
-
-html,
-body {
-    height: 100%;
-}
-
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -22,7 +16,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 475px;
 }
 
 header.carousel .item,

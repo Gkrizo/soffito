@@ -12,15 +12,15 @@
     <title>О натяжных потолках</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/steps.css" />
+    <link href="../css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/steps.css" />
 
     <!-- Custom Fonts -->
-    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -28,8 +28,8 @@
 
 
     <!-- inner pages styles -->
-    <link href="css/inner.css" rel="stylesheet"/>
-
+    <link href="../css/inner.css" rel="stylesheet"/>
+    <link rel="icon" href="../pics/favicon.png">
 </head>
 
 <body>
@@ -46,54 +46,30 @@
                   <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html">
-                <span class="glyphicon glyphicon-home"></span>
-                <p>SOFFITTO</p>
+                <div class="int_page_logo">
+                </div>
+                <p>Soffito</p>
               </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#">О нас</a>
+                    <a href="company.html">О нас</a>
                 </li>
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Натяжные потолки<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-header">Фактура:</li>
                         <li>
-                            <a href="about.html#glossy">Глянцевый</a>
-                        </li>
-                        <li>
-                            <a href="about.html#mat">Матовый</a>
+                          <a href="about.html">Фактуры</a>
                         </li>
                         <li>
-                            <a href="about.html#satin">Сатиновый</a>
+                          <a href="about.html#design">Дизайн</a>
                         </li>
                         <li>
-                            <a href="about.html#fabric">Тканевый</a>
+                            <a href="features.html">Преимущества</a>
                         </li>
-                        <li role="separator" class="divider">
-                        </li>
-                        <li class="dropdown-header">Дизайн:</li>
-                        <li>
-                            <a href="about.html#multilevel">Многоуровневые</a>
-                        </li>
-                        <li>
-                            <a href="about.html#print">Фотопечать</a>
-                        </li>
-                        <li>
-                            <a href="about.html#seam">Фигурный шов</a>
-                        </li>
-                        <li>
-                            <a href="about.html#3d">3d-дизайн</a>
-                        </li>
-                        <li>
-                            <a href="about.html#led">Световые решения</a>
-                        </li>
-                        <li>
-                            <a href="about.html#perforated">Перфорация</a>
-                        </li>
-                    </ul>
+                      </ul>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Свет<b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -126,8 +102,14 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Галерея</a>
+                    <a href="contacts.html">Контакты</a>
                 </li>
+                <li>
+                  <a id="language_icon" href="javascript: window.location = window.location.href.replace('/ru/', '/en/');"><img width=30px; height=30px; src="../pics/en.png"></a>
+                </li>
+                <!-- <li>
+                    <a href="#">Галерея</a>
+                </li> -->
             </ul>
         </div>
           <!-- /.navbar-collapse -->
@@ -152,9 +134,9 @@
         <section id="desc">
           <div class="row">
             <ul class="steps">
-              <li id="glossy">
+              <li>
                 <div class="steps-img">
-                  <img src="pics/abt/glossy.jpg" />
+                  <img src="../pics/abt/glossy.jpg" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -162,14 +144,14 @@
                   </div>
                   <div class="steps-descr-body">
                     <p class="text-muted">
-                      Благодаря зеркальной поверхности они подходят для создания модного дизайна комнат, достижения необычного и идеального эстетичного внешнего вида. Отражающая способность таких потолков зрительно увеличивает объем помещения, что особо актуально в ограниченных пространствах, а также усиливает эффективность осветительных приборов.
+                      Благодаря зеркальной поверхности они подходят для создания модного дизайна комнат, достижения необычного и эстетичного внешнего вида. Отражающая способность таких потолков зрительно увеличивает объем помещения, что особо актуально в ограниченных пространствах, а также усиливает эффективность осветительных приборов.
                     </p>
                   </div>
                 </div>
               </li>
-              <li id="mat" class="steps-inverted">
+              <li class="steps-inverted">
                 <div class="steps-img">
-                  <img src="pics/abt/mat.gif" />
+                  <img src="../pics/abt/mat.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -177,14 +159,14 @@
                   </div>
                   <div class="steps-descr-body">
                     <p class="text-muted">
-                      Матовая фактура внешне близка к поверхности классического беленого потолка, поскольку не отражает блики и свет, идеально ровная поверхность, недоступная для других решений, сообщает помещению сдержанную элегантность. Матовые фактуры применяют в больших помещения, в которых не стоит задача визуально увеличения пространства.
+                      Матовая фактура внешне близка к поверхности классического беленого потолка, поскольку не отражает блики и свет. Идеально ровная, недоступная для других решений, поверхность, сообщает помещению сдержанную элегантность. Матовые фактуры применяют в больших помещения, в которых не стоит задача визуально увеличения пространства.
                     </p>
                   </div>
                 </div>
               </li>
-              <li id="satin">
+              <li>
                 <div class="steps-img">
-                  <img src="pics/abt/satin.gif" />
+                  <img src="../pics/abt/satin.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -192,15 +174,15 @@
                   </div>
                   <div class="steps-descr-body">
                     <p class="text-muted">
-                      Сатиновые натяжные потолки отличаются оригинальной текстурой, и неуловимым перламутровым отливом. Микрорельеф полотна обладает необычным свойством: небольшой эффект отражения позволяет создавать мягкую игру света.
+                      Сатиновые натяжные потолки отличаются оригинальной текстурой и неуловимым перламутровым отливом. Микрорельеф полотна обладает необычным свойством: небольшой эффект отражения позволяет создавать мягкую игру света.
                       Безукоризненно ровная поверхность очень привлекательно смотрится как при естественном, так и при искусственном свете.
                     </p>
                   </div>
                 </div>
               </li>
-              <li id="fabric" class="steps-inverted">
+              <li class="steps-inverted">
                 <div class="steps-img">
-                  <img src="pics/abt/fabric.gif" />
+                  <img src="../pics/abt/fabric.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -220,7 +202,7 @@
         <!-- /.Textures Section -->
 
         <!-- Design Section Heading-->
-        <div class="row">
+        <div class="row" id="design">
             <div class="col-lg-12">
                 <h1 class="page-header">Дизайнерское использование
                     <small>натяжных потолков:</small>
@@ -229,12 +211,12 @@
         </div>
         <!-- /.row -->
         <!-- Textures Section -->
-        <section id="desc">
+        <section>
           <div class="row">
             <ul class="steps">
-              <li id="multilevel">
+              <li >
                 <div class="steps-img">
-                  <img src="pics/abt/multilevel.gif" />
+                  <img src="../pics/abt/multilevel.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -247,9 +229,9 @@
                   </div>
                 </div>
               </li>
-              <li id="print" class="steps-inverted">
+              <li class="steps-inverted">
                 <div class="steps-img">
-                  <img src="pics/abt/print.gif" />
+                  <img src="../pics/abt/print.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -257,14 +239,14 @@
                   </div>
                   <div class="steps-descr-body">
                     <p class="text-muted">
-                    Изображение наносится на полотно натяжного потолка с помощью интерьерного плоттера. Доступная ширина составляет 3 метра. Экосольвентные чернила, используемые для печати, соответствуют стандартам экологической безопасности. Они влагоустойчивы и не выгорают на солнце, поэтому четкость рисунка и насыщенность красок сохраняется в течении долгого времени.
+                    Изображение наносится на полотно натяжного потолка с помощью интерьерного плоттера. Доступная ширина составляет 3 метра. Чернила, используемые для ультрафиолетовой печати, соответствуют стандартам экологической безопасности. Они влагоустойчивы и не выгорают на солнце, поэтому четкость рисунка и насыщенность красок сохраняется в течении долгого времени.
                     </p>
                   </div>
                 </div>
               </li>
-              <li id="seam">
+              <li>
                 <div class="steps-img">
-                  <img src="pics/abt/seam.gif" />
+                  <img src="../pics/abt/seam.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -277,9 +259,9 @@
                   </div>
                 </div>
               </li>
-              <li id="3d" class="steps-inverted">
+              <li class="steps-inverted">
                 <div class="steps-img">
-                  <img src="pics/abt/geometry.gif" />
+                  <img src="../pics/abt/geometry.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -294,9 +276,9 @@
                   </div>
                 </div>
               </li>
-              <li id="led">
+              <li>
                 <div class="steps-img">
-                  <img src="pics/abt/led.gif" />
+                  <img src="../pics/abt/led.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -309,9 +291,9 @@
                   </div>
                 </div>
               </li>
-              <li id="perforated" class="steps-inverted">
+              <li class="steps-inverted">
                 <div class="steps-img">
-                  <img src="pics/abt/perforated2.gif" />
+                  <img src="../pics/abt/perforated2.gif" />
                 </div>
                 <div class="steps-descr">
                   <div class="steps-descr-heading">
@@ -357,10 +339,10 @@
 <!-- /. footer -->
 
     <!-- jQuery -->
-    <script src="libs/jquery/jquery.js"></script>
+    <script src="../libs/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -1,0 +1,21 @@
+.form_error_notice h1, .form_error_notice small{
+  text-align: center;
+}
+.form_error_notice ul{
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #a94442;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.form_error_notice ul {
+  list-style: none;
+}
+.form_success_notice {
+  margin-top:15%;
+}
+.form_success_notice p {
+  text-align: center;
+  color: #232323;
+}
